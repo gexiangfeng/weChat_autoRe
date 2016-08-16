@@ -20,6 +20,7 @@ public class WechatProcess {
 		ReceiveXmlEntity xmlEntity = new ReceiveXmlProcess().getMsgEntity(xml);
 		
 		/** 以文本消息为例，调用图灵机器人api接口，获取回复内容 */
+		System.out.println(xmlEntity);
 		String result = "";
 		if("text".endsWith(xmlEntity.getMsgType())){
 //			result = new TulingApiProcess().getTulingResult(xmlEntity.getContent());

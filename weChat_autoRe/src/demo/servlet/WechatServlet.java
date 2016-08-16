@@ -48,6 +48,7 @@ public class WechatServlet extends HttpServlet {
 		while ((s = br.readLine()) != null) {
 			sb.append(s);
 		}
+		System.out.println(sb);
 		String xml = sb.toString();	//次即为接收到微信端发送过来的xml数据
 
 		String result = "";
