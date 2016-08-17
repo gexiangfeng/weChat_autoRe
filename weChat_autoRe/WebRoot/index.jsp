@@ -21,6 +21,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    This is my JSP page. <br>
+    <form method="POST" action="/weChat_autoRe/wechat.do">
+    <input type="text" value="3219f2585e798cab1eec9d253d54034f90807a23"  name = "signature" id = "signature"/>
+    <input type="text" value="1471340503"  name = "timestamp" id = "timestamp"/>
+    <input type="text" value="1079929963"  name = "nonce" id = "nonce"/>
+    <input type="text" value="orvgfxJzttYhmuyxRmjYWgIHH1C8"  name = "openid" id = "openid"/>
+    <input type="submit" value=""/>
+    
+    </form> <br>
   </body>
 </html>

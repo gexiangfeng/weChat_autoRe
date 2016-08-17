@@ -46,8 +46,10 @@ public class WechatServlet extends HttpServlet {
 		BufferedReader br = new BufferedReader(isr);
 		String s = "";
 		while ((s = br.readLine()) != null) {
+			System.out.println();
 			sb.append(s);
 		}
+
 		System.out.println(sb);
 		String xml = sb.toString();	//次即为接收到微信端发送过来的xml数据
 
