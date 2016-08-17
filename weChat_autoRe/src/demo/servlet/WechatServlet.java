@@ -50,9 +50,7 @@ public class WechatServlet extends HttpServlet {
 			sb.append(s);
 		}
 
-		System.out.println(sb);
 		String xml = sb.toString();	//次即为接收到微信端发送过来的xml数据
-
 		String result = "";
 		/** 判断是否是微信接入激活验证，只有首次接入验证时才会收到echostr参数，此时需要把它直接返回 */
 		String echostr = request.getParameter("echostr");
