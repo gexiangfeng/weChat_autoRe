@@ -23,8 +23,8 @@ public class WechatProcess {
 		System.out.println(xmlEntity);
 		String result = "";
 		if("text".endsWith(xmlEntity.getMsgType())){
-//			result = new TulingApiProcess().getTulingResult(xmlEntity.getContent());
-			result = xmlEntity.getContent();
+			result = new TulingApiProcess().getTulingResult(xmlEntity.getContent());
+//			result = xmlEntity.getContent();
 		}
 		
 		/** 此时，如果用户输入的是“你好”，在经过上面的过程之后，result为“你也好”类似的内容 
